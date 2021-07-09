@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+	<meta name="description" content="web development made easy uisng html and css" />
+	<meta name="description" content="simple html and css tricks for web developers" />
+	<meta name="description" content="how to create a glass effect" />
+	<meta name="description" content="how to create a glassmorphism efect"/>
+	<meta name="robots" content="follow" />
+	<meta name="author" content="Akale Godlove" />
+	<meta name="keywords"
+		content="glassmorphism , how to create glass effect, html, trending ui design , css, design patterns, web development tutorials, html tutorials, w3schools,easy html tutorial, simple tutorial, web , web developmennt" />
+
+	<title>Glassmorphism - how to create in pure CSS</title>
+	<link rel="stylesheet" href="../style.css" />
+		<link rel="icon" href="../icons/logo.png">
+</head>
+
+<body>
+
+	<nav>
+		<div class="logo"><img src="../icons/logo.png" alt="logo" width="200px" height="73px" /></div>
+		<div class="cta">
+			<ul>
+				<li><a href="../index.html" class="active">Blog</a></li>
+				<li><a href="../resources.html">Resources</a></li>
+				<li><a href="https://akalegodlove.netlify.app/">Portfolio</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="post-read">
+
+		<div class="post-header">
+			<h1>Glassmorphism - how to create in pure CSS </h1>
+			<p class="tag">A short guide on how to create glassmorphic elements in pure CSS.</p>
+			<p class="datetime">7 July,2021</p>
+		</div>
+
+		<div class="post-img">
+			<img src="../post-thumbnails/glass.png" alt="post-image" width="100%" height="240px">
+		</div>
+
+		<p class="into-text">
+		In 2019 Neumorphism trend was horrible and awful.  Michał Malewicz, the
+		creator of Neumorphism style, wrote about something fresh and good looking - Glassmorphism style.
+		Let's take a look at it. @<a
+					href="www.albertwalicki.com">Albert Wallicki.</a></em>
+		</p>
+
+		<div class="more-info">
+			<h2> New trend</h2>
+			<p>Glassmorphism is a new trend which is getting more popular on services like Dribbble or Behance.</p>
+			<div class="image-abt-post">
+				<img src="../post-thumbnails/glass-ex.png " alt="post-image" width="100%" height="240px">
+			</div>
+			<p>It's characteristic features are: </p>
+			<ul>
+				<li>transparency (frosted-glass)</li>
+				<li>vivid or pastel colours</li>
+				<li>light border</li>
+			</ul>
+		</div>
+
+
+		<div class="more-info">
+			<h2> Glassmorphism - the CSS way</h2>
+			<p>Glassmorphism pretty easy to achieve for frontend developers. There is one main CSS property which we can use -
+			backdrop-filter. This property allows you to apply multiple effects such as blur, sepia, greyscale to the area behind
+			your component. Since it applies to everything behind the component, to see the effect, you must make this element to be
+			at least partially transparent.</p>
+			<div class="image-abt-post">
+				<img src="../post-thumbnails/glass-ex2.png " alt="post-image" width="100%" height="240px">
+			</div>
+			<p>To create glassmorphism effect you should use <mark>backdrop-filter: blur()</mark>.The image behind has straight <mark>background: rgba(255,255,255,0.4) </mark>. . The element above is a copy of the first one but with additional <mark>backdrop-filter: blur(10px) </mark>property.</p>
+			<p>This is the simplest example of a new trend. But we can go even further. You can add recomended by <strong> Michał Malewicz</strong>
+			border-radius, white border and little bit more blur </p>
+		</div>
+
+
+		<div class="more-info">
+			<h2>Browser compatibility</h2>
+			<p> The property <mark>backdrop-filter()</mark>according to CaniUse.com is fully supported by Chrome, Safari, iOS, Android Browser and Edge. Firefox is not supported by
+			default but can be enabled.</p>
+		</div>
+
+
+		<div class="button">
+			<button class="all-post"><a href="../index.html">See All Posts</a></button>
+		</div>
+
+
+	</div>
+	<!---contact links -->
+	<div class="contact">
+		<h3 class="active"> Contact Me :</h3>
+		<div class="ci-icons">
+			<a href=""><img src="../icons/fb.png" alt="social-media icon" width="45px" height="45px" /></a>
+			<a href=""><img src="../icons/wa.png" alt="social-media icon" width="45px" height="45px" /></a>
+			<a href=""><img src="../icons/gt.png" alt="social-media icon" width="45px" height="45px" /></a>
+			<a href=""><img src="../icons/li.png" alt="social-media icon" width="45px" height="45px" /></a>
+			<a href=""><img src="../icons/ig.png" alt="social-media icon" width="45px" height="45px" /></a>
+			<a href=""><img src="../icons/tt.png" alt="social-media icon" width="45px" height="45px" /></a>
+			<a href=""><img src="../icons/tt.png" alt="social-media icon" width="45px" height="45px" /></a>
+			<a href=""><img src="../icons/f2r.jpg" alt="social-media icon" width="45px" height="45px" /></a>
+		</div>
+	</div>
+	<!-- footer-->
+	<footer>
+		<div class="about">
+			<h3>About HTMLDEVTRICKS :</h3>
+			<p>The aim of this blog is to share my personal journey as well as provide some helpful tips for anyone who is
+				looking to
+				start journey into development. I’m also hoping it will help me improve my writing skills and grow my network.
+				I’m
+				always looking to learn new things and this way I get to share that experience and also learn from my audience.
+				My
+				initial goal is to post a new article every week on Sundays, so make sure you check back soon.</p>
+		</div>
+
+		<!--end of credit-->
+		<!--proverb-->
+		<div class="row2">
+			<div class="proverb">
+				<cite>
+					"if you judge a fish by its ability to climb a tree, it will live its whole life believing its stupid."
+				</cite>
+				<p>~Albert Einstein~</p>
+			</div>
+			<!-- end of proverb-->
+			<div class="mycreds">
+				<p>Designed and developed with &hearts; by <span class="name">Akale Godlove.</span></p>
+			</div>
+		</div>
+		<!--end of proverb-->
+		<div class="copy">&copy; <span class="year"> </span>. All rights reserved by <span class="company">AB
+				softwares</span><sup>&reg;</sup>
+		</div>
+	</footer>
+	<script src="../main.js"></script>
+</body>
+
+</html>

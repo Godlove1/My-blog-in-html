@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+	<meta name="description" content="web development made easy uisng html and css" />
+	<meta name="description" content="simple html and css tricks for web developers" />
+	<meta name="description" content="web development blog for html and css tutorials" />
+	<meta name="robots" content="follow" />
+	<meta name="author" content="Akale Godlove" />
+	<meta name="keywords"
+		content="css z-index , html5, html, html5, css, css3, index, html tutorials, w3schools,easy html tutorial,how to use z-index, z-index , web developmennt" />
+
+	<title> The z-index property</title>
+	<link rel="stylesheet" href="../style.css" />
+		<link rel="icon" href="../icons/logo.png">
+</head>
+
+<body>
+
+	<nav>
+		<div class="logo"><img src="../icons/logo.png" alt="logo" width="200px" height="73px" /></div>
+		<div class="cta">
+			<ul>
+				<li><a href="../index.html" class="active">Blog</a></li>
+				<li><a href="../resources.html">Resources</a></li>
+				<li><a href="https://akalegodlove.netlify.app/">Portfolio</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="post-read">
+
+		<div class="post-header">
+			<h1>Using the z-index property to create Layers effect. </h1>
+			<p class="tag">The z-index property to create an effect of layers.</p>
+			<p class="datetime">5 July,2021</p>
+		</div>
+
+		<div class="post-img">
+			<img src="../post-thumbnails/zin.jpg" alt="post-image" width="100%" height="240px">
+		</div>
+
+		<p class="into-text">
+			Basically, the z-index property is used to create a layer untop of another layer effect. Z-index is used to make some/a element(s) look like it is/are untop or under  another.
+		You can specify which element should be under and which one should be untop(i.e, stacking them up).
+		</p>
+<p style="width: 300px; margin:50px; height:auto; border-left: 5px solid purple; text-align:left;">
+	<cite>
+		The z-index property only works on <mark>Positioned elements</mark> . Meaning you can only apply this property to an element with style <mark>position</mark> to it. For example : <br>
+		#container{<br>
+			position: absolute;<br>
+			z-index: 1;<br>
+		}
+	</cite>
+</p>
+
+<p>The z-index property can equally take <mark>negative values e.g -1</mark></p>
+
+
+		<div class="more-info">
+			<h2>Stacking</h2>
+			<p> The z-index property controls the vertical order of elements that overlap.As in , which appears as if it is closer to you. As mentiond earlier it affets only elements with that have <mark>position</mark> value other than the<mark>static</mark>(which is the default).</p>
+		</div>
+
+
+		<div class="more-info">
+			<h2> Why use Z-index?</h2>
+			<p>Without <mark>z-index value</mark> elements stack in the order they appear in the DOM(the lowest element at same level appears on top).Elements with non-static positioning i.e <mark>given another position value like absolute or relative</mark>(default) will always appear on top of elements with default staic positioning </p>
+			<p> Elements can overlap for a variety of reasons, for instance, realtive positioning has nudged it over something else. </p>
+			<p>Negaive Margin has pulled the element over another. Absolutely posioned elements overlap each other .All sorts of reasons.</p>
+		</div>
+
+	</p>
+	<p style="width: 300px; margin:50px; height:auto; border-left: 5px solid purple; text-align:left;">
+		<cite>
+		Also note that nesting plays a big role . If an element <mark>B</mark> sits on top of an element <mark>A</mark>, a child element of,<mark>A</mark> can never be higher than element B
+		</cite>
+	</p>
+
+		<div class="more-info">
+			<div class="image-abt-post">
+				<img src="../post-thumbnails/z-ex.png" alt="z-index-image example" width="100%" height="240px">
+			</div>
+		</div>
+
+	<div style="width: 300px; margin:10px; height:auto; border-left: 5px solid purple; text-align:left;">
+		<cite>
+			<pre> 
+     .c1 {
+
+   background: rgb(192, 211, 19);
+   width: 200px;
+   height: 100px;
+   position: relative;
+   z-index: 1;
+
+    }
+
+ .c2 {
+
+ background: red;
+ width: 200px;
+ height: 100px;
+ position: relative;
+ z-index: 2;
+ top: -20px;
+ left: 45px;
+
+ }
+
+	.c3 {
+
+	background: blue;
+	width: 200px;
+	height: 100px;
+	position: relative;
+	z-index: 3;
+	top: -30px;
+	left: 90px;
+
+	}
+			</pre>
+		</cite>
+	</div>
+
+
+	<div class="more-info">
+		<p> The CSS code above will produce the stacked div containersa as so</p>
+	</div>
+
+
+
+
+		<div class="button">
+			<button class="all-post"><a href="../index.html">See All Posts</a></button>
+		</div>
+
+<!----end of post -read-->
+	</div>
+	<!---contact links -->
+	<div class="contact">
+		<h3 class="active"> Contact Me :</h3>
+		<div class="ci-icons">
+			<a href=""><img src="../icons/fb.png" alt="social-media icon" width="45px" height="45px" /></a>
+			<a href=""><img src="../icons/wa.png" alt="social-media icon" width="45px" height="45px" /></a>
+			<a href=""><img src="../icons/gt.png" alt="social-media icon" width="45px" height="45px" /></a>
+			<a href=""><img src="../icons/li.png" alt="social-media icon" width="45px" height="45px" /></a>
+			<a href=""><img src="../icons/ig.png" alt="social-media icon" width="45px" height="45px" /></a>
+			<a href=""><img src="../icons/tt.png" alt="social-media icon" width="45px" height="45px" /></a>
+			<a href=""><img src="../icons/tt.png" alt="social-media icon" width="45px" height="45px" /></a>
+			<a href=""><img src="../icons/f2r.jpg" alt="social-media icon" width="45px" height="45px" /></a>
+		</div>
+	</div>
+	<!-- footer-->
+	<footer>
+		<div class="about">
+			<h3>About HTMLDEVTRICKS :</h3>
+			<p>The aim of this blog is to share my personal journey as well as provide some helpful tips for anyone who is
+				looking to
+				start journey into development. I’m also hoping it will help me improve my writing skills and grow my network.
+				I’m
+				always looking to learn new things and this way I get to share that experience and also learn from my audience.
+				My
+				initial goal is to post a new article every week on Sundays, so make sure you check back soon.</p>
+		</div>
+
+		<!--end of credit-->
+		<!--proverb-->
+		<div class="row2">
+			<div class="proverb">
+				<cite>
+					"if you judge a fish by its ability to climb a tree, it will live its whole life believing its stupid."
+				</cite>
+				<p>~Albert Einstein~</p>
+			</div>
+			<!-- end of proverb-->
+			<div class="mycreds">
+				<p>Designed and developed with &hearts; by <span class="name">Akale Godlove.</span></p>
+			</div>
+		</div>
+		<!--end of proverb-->
+		<div class="copy">&copy; <span class="year"> </span>. All rights reserved by <span class="company">AB
+				softwares</span><sup>&reg;</sup>
+		</div>
+	</footer>
+	<script src="../main.js"></script>
+</body>
+
+</html>
